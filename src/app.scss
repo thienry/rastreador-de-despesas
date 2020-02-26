@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
 
-$font-open-sans: 'Open-Sans';
+$font-roboto-slab: "Roboto Slab";
 
 $padding: 15px;
 $margin: 15px;
+$box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
 $colors: (
   white: #fff,
@@ -11,6 +12,8 @@ $colors: (
   independency: #3a506b,
   yankees-blue: #1c2541,
   maastright-blue: #0b132b,
+  cinnabar: #e74c3c,
+  persian-red: #c0392b,
   independency-light: lighten(#3a506b, 60%)
 );
 
@@ -26,15 +29,32 @@ $colors: (
 
 body {
   background: color(independency-light);
-  font-family: $font-open-sans;
+  font-family: $font-roboto-slab;
   color: color(independency);
 }
 
 .container {
   max-width: 1200px;
+  padding: $padding;
   margin: auto;
 }
 
-.sticky-footer {
+.sticky {
   min-height: calc(100vh - 70px);
+}
+
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
 }

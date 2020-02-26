@@ -1,0 +1,19 @@
+@import "../../../app.scss";
+
+main {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    width: 100%;
+  }
+
+  div.balance { 
+    margin-top: 50px;
+    padding-right: 50px;
+  }
+
+  div.form-transaction {
+    margin-top: 50px;
+  }
+}

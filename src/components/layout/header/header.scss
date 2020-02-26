@@ -9,18 +9,17 @@ header {
     justify-content: space-between;
 
     h1.logo {
-      padding: $padding;
       font-size: 1.8rem;
       text-transform: uppercase;
 
       a {
         text-decoration: none;
         color: color(independency);
+        transition: 300ms;
       }
 
       a:hover {
         color: color(independency-light);
-        transition: 500ms;
       }
     }
 

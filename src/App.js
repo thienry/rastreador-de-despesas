@@ -11,7 +11,7 @@ import "./app.scss";
 function App() {
   return (
     <Router>
-      <div className="sticky-footer">
+      <div className="sticky">
         <Header />
         <Switch>
           <Route exact path="/" component={ExpenseTracker} />
