@@ -11,14 +11,14 @@ import "./app.scss";
 function App() {
   return (
     <Router>
-      <>
+      <div className="sticky-footer">
         <Header />
         <Switch>
           <Route exact path="/" component={ExpenseTracker} />
           <Route exact path="/sobre" component={About} />
         </Switch>
-        <Footer />
-      </>
+      </div>
+      <Footer />
     </Router>
   );
 }

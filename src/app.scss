@@ -34,3 +34,7 @@ body {
   max-width: 1200px;
   margin: auto;
 }
+
+.sticky-footer {
+  min-height: calc(100vh - 70px);
+}

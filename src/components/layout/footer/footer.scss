@@ -1,0 +1,33 @@
+@import "../../../app.scss";
+
+footer {
+  background-color: color(maastright-blue);
+  height: 70px;
+  border-bottom: 5px solid color(sea-serpent);
+
+  div.container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+
+    p {
+      font-size: 1.2rem;
+      color: color(independency-light);
+
+      .icon {
+        font-size: .8rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: color(independency-light);
+        margin-left: 10px;
+      }
+
+      a:hover {
+        color: color(independency);
+        transition: 500ms;
+      }
+    }
+  }
+}
