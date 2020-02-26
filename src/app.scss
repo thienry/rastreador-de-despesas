@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+$font-open-sans: 'Open-Sans';
+
+$padding: 15px;
+$margin: 15px;
+
+$colors: (
+  white: #fff,
+  sea-serpent: #5bc0be,
+  independency: #3a506b,
+  yankees-blue: #1c2541,
+  maastright-blue: #0b132b,
+  independency-light: lighten(#3a506b, 60%)
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: color(independency-light);
+  font-family: $font-open-sans;
+  color: color(independency);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}

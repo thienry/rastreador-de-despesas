@@ -1,0 +1,49 @@
+@import "../../../app.scss";
+
+header {
+  height: 70px;
+  background: color(sea-serpent);
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+
+    h1.logo {
+      padding: $padding;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+
+      a {
+        text-decoration: none;
+        color: color(independency);
+      }
+
+      a:hover {
+        color: color(white);
+        transition: 500ms;
+      }
+    }
+
+    ul.main-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      li {
+        list-style-type: none;
+        margin: 0 15px;
+        font-size: 1.2rem;
+
+        a {
+          text-decoration: none;
+          color: color(independency);
+        }
+
+        a:hover {
+          color: color(white);
+          border-bottom: 2px solid color(white);
+        }
+      }
+    }
+  }
+}
