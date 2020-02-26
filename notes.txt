@@ -1,0 +1,11 @@
+Install - frontend:
+
+- redux
+- react-redux
+- node-sass
+
+
+install backend: 
+
+- express;
+- mongoose;
