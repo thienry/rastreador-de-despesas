@@ -5,6 +5,7 @@ import "./incomeExpense.scss";
 
 function Index() {
   const { transactions } = useSelector(state => state);
+  console.log(transactions);
 
   const amounts = transactions.map(transaction => transaction.amount);
 
@@ -13,7 +14,7 @@ function Index() {
     .reduce((acc, item) => (acc += item), 0)
     .toFixed(2);
 
-  const expense = (
+    const expense = (
     amounts.filter(item => item < 0).reduce((acc, item) => (acc += item), 0) *
     -1
   ).toFixed(2);
