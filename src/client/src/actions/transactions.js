@@ -1,6 +1,20 @@
 //import axios from "axios";
 import { ADD_TRANSACTION, DELETE_TRANSACTION } from "./types";
 
+export function addTransaction(transaction) {
+  return {
+    type: ADD_TRANSACTION,
+    payload: transaction
+  };
+}
+
+export const deleteTransaction = id => {
+  return {
+    type: DELETE_TRANSACTION,
+    payload: id
+  }
+}
+
 /*
 export async function getTransactions(dispatch) {
   try {
@@ -48,16 +62,3 @@ export async function deleteTransaction(id, dispatch) {
 }
 */
 
-export function addTransaction(transaction) {
-  return {
-    type: ADD_TRANSACTION,
-    payload: transaction
-  };
-}
-
-export function deleteTransaction(id) {
-  return {
-    type: DELETE_TRANSACTION,
-    payload: id
-  };
-}

@@ -5,7 +5,6 @@ import "./incomeExpense.scss";
 
 function Index() {
   const { transactions } = useSelector(state => state);
-  console.log(transactions);
 
   const amounts = transactions.map(transaction => transaction.amount);
 

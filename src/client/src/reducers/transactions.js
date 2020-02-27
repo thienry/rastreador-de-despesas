@@ -1,23 +1,14 @@
-import {
-  ADD_TRANSACTION,
-  DELETE_TRANSACTION
-} from "../actions/types";
+import { ADD_TRANSACTION, DELETE_TRANSACTION } from "../actions/types";
 
-const initialState = [{ id: 1, text: "thiago", amount: 1.0 }];
+const initialState = [];
 
-export default function(state = initialState, action) {
-  switch (action.type) {
+export default function(state = initialState, { type, payload }) {
+  switch (type) {
     case ADD_TRANSACTION:
-      return {
-        ...state,
-        transactions: [...state, action.payload]
-      };
+      return [payload, ...state];
 
     case DELETE_TRANSACTION:
-      return {
-        ...state,
-        transactions: state.filter(trans => trans.id !== action.payload)
-      };
+      return state.filter(trans => trans.id !== payload);
 
     default:
       return state;
