@@ -1,42 +1,31 @@
 {
   "name": "rastreador-despesas",
-  "version": "0.1.0",
-  "license": "MIT",
-  "private": true,
-  "dependencies": {
-    "axios": "^0.19.2",
-    "node-sass": "^4.13.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-icons": "^3.9.0",
-    "react-redux": "^7.2.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0",
-    "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0",
-    "uuid": "^7.0.1"
-  },
+  "version": "1.0.0",
+  "description": "Uma aplicaçao para gerenciamento simples de despesas e receitas",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "serve": "serve -s build",
-    "build-and-serve": "yarn build && npm run serve"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thienry/rastreador-de-despesas.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "Thiago Moura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thienry/rastreador-de-despesas/issues"
+  },
+  "homepage": "https://github.com/thienry/rastreador-de-despesas#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.2",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
   }
 }
